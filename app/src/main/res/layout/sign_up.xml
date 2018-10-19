@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This is to make the screen scrollable so that all the buttons, text, and edittext
+ scrolled to when not on screen
+ The background is an image-->
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main1"
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@id/scroll"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/register_id"
+        tools:context=".SignUp">
+
+        <!--edittext for first name w/ the background/style set to a predefined xml style known as
+         rounded_edittext-->
+        <EditText
+            android:id="@+id/First_Name_Field"
+            android:layout_width="246dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/FNHint"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--edittext for last name w/ the background/style set to a predefined xml style known as
+         rounded_edittext-->
+        <EditText
+            android:id="@+id/Last_name_Field"
+            android:layout_width="246dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/LNHint"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/First_Name_Field" />
+
+        <!--edittext for email w/ the background/style set to a predefined xml style known as
+         rounded_edittext-->
+        <EditText
+            android:id="@+id/email_sign_up"
+            android:layout_width="246dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/hint1"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Last_name_Field" />
+
+        <!--edittext for date of birth w/ the background/style set to a predefined xml style known as
+         rounded_edittext. Also only accepts date format, no letters-->
+        <EditText
+            android:id="@+id/Date_of_birth"
+            android:layout_width="246dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/DOB"
+            android:inputType="date"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_sign_up" />
+
+        <!--edittext for password w/ the background/style set to a predefined xml style known as
+         rounded_edittext-->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="246dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/hint2"
+            android:inputType="textVisiblePassword"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Date_of_birth" />
+
+        <!--edittext for password w/ the background/style set to a predefined xml style known as
+         rounded_edittext-->
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="246dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/hint2repeat"
+            android:inputType="textVisiblePassword"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <!--button to be click for registering the information-->
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+        <!--Clickable text that will send user to previous screen to sign in-->
+        <TextView
+            android:id="@+id/register_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_create" />
+
+        <!--textview added with no purpose other than to help maintain the picture size and position-->
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_id" />
+
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>

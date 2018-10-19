@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">The Splash</string>
+    <string name="creator">By Elvin Martinez</string>
+    <string name="login">Login</string>
+    <string name="hint1">Email</string>
+    <string name="hint2">Password</string>
+    <string name="sign_up">Not a member? Sign up now</string>
+    <string name="FNHint">First Name</string>
+    <string name="LNHint">Last Name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="hint2repeat">Reenter Password</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Already Registered? Sign in here</string>
+    <string name="logged">Congratulations, you have logged in</string>
+    <string name="complete">Completed</string>
+
+    <string name="userFName">com.example.elvin.user_login_signup.userFName</string>
+    <string name="userLName">com.example.elvin.user_login_signup.userLName</string>
+    <string name="userEmail">Scom.example.elvin.user_login_signup.userEmail</string>
+    <string name="userDate">com.example.elvin.user_login_signup.userDate</string>
+    <string name="userPassword">com.example.elvin.user_login_signup.userPassword</string>
+</resources>
